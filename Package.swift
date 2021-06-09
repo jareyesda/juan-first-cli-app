@@ -6,6 +6,7 @@ import PackageDescription
 let package = Package(
     name: "juan-first-cli-app",
     dependencies: [
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.0.1")
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
