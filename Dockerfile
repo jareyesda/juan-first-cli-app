@@ -1,4 +1,6 @@
 FROM swift
-COPY . /app
 WORKDIR /app
-ENTRYPOINT ["swift", "run", "juan-first-cli-app"]
+COPY . .
+#RUN swift build -c release
+RUN ["swift", "build"]
+ENTRYPOINT [ "swift", "run", "juan-first-cli-app"]
